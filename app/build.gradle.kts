@@ -83,17 +83,17 @@ dependencies {
 
 
     // Dagger Core
-    implementation("com.google.dagger:dagger:2.37")
-    kapt("com.google.dagger:dagger-compiler:2.37")
+    implementation("com.google.dagger:dagger:2.46")
+    kapt("com.google.dagger:dagger-compiler:2.46")
 
 // Dagger Android
-    api ("com.google.dagger:dagger-android:2.37")
-    api ("com.google.dagger:dagger-android-support:2.37")
-    kapt ("com.google.dagger:dagger-android-processor:2.37")
+    api ("com.google.dagger:dagger-android:2.46")
+    api ("com.google.dagger:dagger-android-support:2.46")
+    kapt ("com.google.dagger:dagger-android-processor:2.46")
 
     // Dagger - Hilt
-    implementation ("com.google.dagger:hilt-android:2.37")
-    kapt ("com.google.dagger:hilt-android-compiler:2.37")
+    implementation ("com.google.dagger:hilt-android:2.46")
+    kapt ("com.google.dagger:hilt-android-compiler:2.46")
 
     // Room DB
     implementation("androidx.room:room-runtime:2.6.1")
@@ -101,7 +101,13 @@ dependencies {
     kapt("androidx.room:room-compiler:2.6.1")
 
 
-    //implementation("com.google.devtools.ksp:symbol-processing-api:1.6.0")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
+    implementation("com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2")
+
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.2.0")
+
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
